@@ -1,0 +1,115 @@
+.carousel__wrapper {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 70px;
+    overflow: hidden;
+    padding-bottom: 30px;
+    margin-left: -35px;
+    margin-right: -35px;
+}
+
+.carousel__wrapper::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50px;
+    z-index: 10;
+    width: 88px;
+    height: calc(100% + 25px);
+    opacity: 0.7;
+    background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0.7;
+    transform: rotate(180deg);
+}
+
+
+.carousel__wrapper::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 88px;
+    height: calc(100% + 25px);
+    opacity: 0.7;
+    background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0.7;
+    transform: rotate(180deg);
+}
+
+.carousel__btn {
+    position: absolute;
+    z-index: 122;
+    top: calc(50%);
+    background-color: black;
+    width: 32px;
+    height: 48px;
+    border:none;
+    background-repeat: no-repeat;
+    background-position:center;
+    cursor: pointer;
+}
+
+.left-btn {
+    left: 0;
+    background-image: url(/img/w-left-arrow.svg);
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.right-btn {
+    right: 0;
+    background-image: url(/img/w-right-arrow.svg);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.carousel__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  
+}
+
+.carousel__item {
+    position: relative;
+    z-index: 1;
+    padding:24px 32px 40px;
+    text-align: center;
+    border: 1px solid #f1f1f1;
+    border-radius: 12px;
+    min-width: 370px;
+    height: auto;
+    margin-right: 32px;
+    
+}
+
+.carousel__quote {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: $main-color;
+    margin-bottom: 24px;
+    overflow-y: hidden;
+}
+
+.carousel__names {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #A9A9A9;
+    margin: 24px 0 0px 0;  
+   
+}
+
+.carousel__imgs {
+    position: absolute;
+    z-index: 122;
+    left:calc(50% - 20px);
+    bottom: -24px;
+}

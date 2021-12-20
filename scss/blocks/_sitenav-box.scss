@@ -1,0 +1,10 @@
+.site-header__sitenav-box{
+  padding: 16px  45px;
+  background-color: #f9f9f9;
+}
+
+@media only screen and (max-width: 685px) {
+  .site-header__sitenav-box {
+    padding: 0;
+  }
+}

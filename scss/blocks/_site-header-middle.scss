@@ -1,0 +1,28 @@
+.site-header__middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0 45px;
+    background-color: white;
+}
+
+@media only screen and (max-width: 450px) {
+    .site-header__middle {
+        min-width: 100%;
+        padding: 40px 25px 45px;
+    }
+
+    .middle__logo-link {
+        min-width: 117px;
+        height: 18px;
+        margin-right: 20px;
+    }
+}
+
+.middle__logo-link {
+    min-width: 177px;
+    height: 18px;
+    margin-right: 20px;
+}
+

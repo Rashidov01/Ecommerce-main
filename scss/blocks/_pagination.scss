@@ -1,0 +1,28 @@
+.page-pagination {
+  margin: 15px 0 24px 0;
+}
+
+.page-pagination__content {
+  color: $grey-cl;
+  font-family: $secondary-font;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 16px;
+
+  &:last-child {
+    color: $main-color;
+  }
+
+  &:not(:last-child)::after {
+    content: '/';
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+}
+
+@include breakpoint-down (680px){
+  .page-pagination{
+    margin-top: 0;
+    margin-bottom: 15px
+  }
+}

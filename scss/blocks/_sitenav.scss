@@ -1,0 +1,156 @@
+.sitenav {
+  background-color: #f9f9f9;
+}
+
+.sitenav__icon-close {
+  display: none;
+}
+
+.sitenav__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.sitenav__item{
+  position: relative;
+}
+
+.sitenav__item .sitenav__dropdown-list{
+  position: absolute;
+  display: none;
+}
+
+.sitenav__item:hover .sitenav__dropdown-list{
+  display: block;
+}
+
+.sitenav__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+
+.sitenav__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: $main-color;
+  transition:  color 0.3s ease, opacity 0.3s ease;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    margin-left: 4px;
+    background-image: url("../../img/icon-down.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 12px;
+    height: 12px;
+  }
+
+}
+
+.sitenav__dropdown-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: $green-cl;
+  padding: 8px 12px;
+  width: 150px;
+  z-index: 100;
+  position: absolute;
+}
+
+.sitenav__dropdown-item{
+  margin-top: 5px;
+
+  &:focus-within {
+    color: rgba(106, 152, 60, 0.8);
+  }
+}
+
+.sitenav__dropdown__link {
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: $white-cl;
+  transition: color 0.5s ease;
+
+  &:hover{
+    opacity: 0.8;
+  }
+}
+
+@media only screen and (max-width: 1135px) {
+  .sitenav__list {
+    margin-top: -16px;
+  }
+
+  .sitenav__item {
+    margin-top: 16px;
+  }
+}
+
+@media only screen and (max-width: 685px) {
+  .sitenav {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: $white-cl;
+    padding: 20px;
+    transition: transform 0.8s ease;
+  }
+
+  .sitenav__icon-close {
+    display: block;
+    margin-left: auto;
+  }
+
+  .sitenav__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sitenav__dropdown-list {
+    position: static;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: transparent;
+    width: 140px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .sitenav__dropdown__link {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .sitenav__item .sitenav__dropdown-list{
+    position: static;
+  }
+
+  .sitenav--open {
+    display: block;
+    transform: translateX(0);
+    transition: transform 0.5s ease;
+    background-color: $white-cl;
+  }
+
+}
+
+

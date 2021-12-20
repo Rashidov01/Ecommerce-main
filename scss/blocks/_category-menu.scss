@@ -1,0 +1,118 @@
+/* CATEGORY MENU */
+.category-menu {
+  padding: 64px 0px;
+}
+
+.category-menu__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-menu__item {
+  width: 269px;
+  display: flex;
+  flex-direction: column;
+}
+
+.category-menu__title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: $main-color;
+}
+
+.category-menu__link {
+  margin-bottom: 12px;
+  color: $green-cl;
+}
+
+.category-menu__more-category {
+  position: relative;
+  width: 190px;
+  padding: 12px 38px 12px 16px;
+  margin-top: 40px;
+  text-decoration: none;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  background-color: $lightGrey-cl;
+  color: $main-color;
+  border-radius: 12px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.category-menu__more-category::after {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  content: "";
+  display: block;
+  top: 16px;
+  left: 155px;
+  background-image: url("../img/array.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.green {
+  width: 430px;
+  padding: 40px 182px 32px 32px;
+  background-image: url("/img/Banner.png");
+  border-radius: 12px;
+}
+
+.category-menu__text {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: $green-cl;
+}
+
+.category-menu__green-link {
+  position: relative;
+  width: 177px;
+  padding: 12px 38px 12px 16px;
+  margin-top: 94px;
+  text-decoration: none;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  border: 2px solid $green-cl;
+  box-sizing: border-box;
+  color: $main-color;
+  border-radius: 12px;
+
+  &:hover {
+    background-color: $white-cl;
+  }
+
+  &::after {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    content: "";
+    display: block;
+    top: 15px;
+    left: 140px;
+    background-image: url("/img/array.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+

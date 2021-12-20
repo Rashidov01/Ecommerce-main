@@ -1,0 +1,132 @@
+// Site-footer
+
+.site-footer {
+  padding: 64px 0 20px 0;
+}
+
+.site-footer__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.site-footer__box-heading {
+  font-family: $main-font;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: $main-color;
+  margin-bottom: 16px;
+}
+
+
+.site-footer__box-item {
+  @include list-unstyled;
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.site-footer__box-link {
+  color: $green-cl;
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration: none;
+}
+
+.site-footer__middle {
+  margin-bottom: 48px;
+}
+
+
+.site-footer__middle-contents {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.site-footer__middle-info {
+  @include list-unstyled;
+  margin-right: 16px;
+  margin-bottom: 20px;
+}
+
+.site-footer__middle-heading {
+  margin-bottom: 20px;
+  font-family: $main-font;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.site-footer__middle-link {
+  text-decoration: none;
+  background-color: $lightGrey-cl;
+  border-radius: 12px;
+  padding: 5px 10px;
+  font-family: $main-font;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: $main-color;
+
+  &:hover {
+    background-color: rgba(245, 245, 245, 0.6);
+  }
+}
+
+.site-footer__bottom {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 19px;
+  color: $main-color;
+}
+
+@include breakpoint-down (768px) {
+  .site-footer__top{
+    flex-wrap: wrap;
+  }
+
+  .site-footer__box-group{
+    margin-right: 30px;
+    margin-bottom: 40px;
+
+    &:nth-child(2){
+      margin-right: 0;
+      padding-right: 70px;
+    }
+  }
+}
+
+@include breakpoint-down (480px) {
+  .site-footer{
+    padding-top: 0;
+  }
+  .site-footer__top{
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  .site-footer__middle{
+    display: none;
+  }
+
+  .site-footer__box-group{
+    margin-bottom: 40px;
+    margin-right: 0;
+    padding: 0;
+
+    &:nth-child(2){
+      padding-right: 0;
+    }
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+

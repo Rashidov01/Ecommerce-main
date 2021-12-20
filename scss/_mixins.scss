@@ -1,0 +1,57 @@
+@mixin list-unstyled {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin dflex($justify) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify;
+}
+
+@mixin bg-image ($size, $position, $width, $height) {
+  background-repeat: no-repeat;
+  background-size: $size;
+  background-position: $position;
+  width: $width;
+  height: $height;
+}
+
+@mixin flex-direction($align, $justify, $flex-direction) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $flex-direction;
+}
+
+@mixin primaryBtn {
+  font-family: $main-color;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22px;
+  color: $white-cl;
+  background-color: $green-cl;
+  border: 2px solid #46760A;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 6px 12px;
+  transition: ease 0.5s ;
+
+  &:hover{
+    background-color: #fff;
+    color: $green-cl;
+  }
+
+  &:active{
+    color: #46760A;
+    opacity: 0.6;
+  }
+}
+
+@mixin breakpoint-down ($size) {
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+};

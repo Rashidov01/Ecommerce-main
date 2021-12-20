@@ -1,0 +1,79 @@
+.list-view {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.list-view__title {
+  font-family: $main-font;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: $main-color;
+}
+
+.list-view__button {
+  background-color: transparent;
+  border: none;
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 16px;
+  color: $main-color;
+  margin-right: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  &:first-child::before{
+    content: '';
+    @include bg-image(contain, center, 14px, 14px);
+    background-image: url(../../img/grid-view.svg);
+    margin-right: 5px;
+  }
+
+  &:nth-child(2)::before{
+    content: '';
+    @include bg-image(contain, center, 14px, 14px);
+    background-image: url(../../img/list-view2.svg);
+    margin-right: 5px;
+  }
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.list-view__btn{
+  display: flex;
+  align-items: center;
+}
+
+.list-view__digit{
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 16px;
+  color: $main-color;
+}
+
+.list-view__digit-content{
+  background-color: $lightGrey-cl;
+  padding: 2px 4px;
+  color: $green-cl;
+  border-radius: 30px;
+}
+
+@include breakpoint-down (768px){
+  .list-view{
+    margin-bottom: 15px;
+  }
+  .list-view__title{
+    font-size: 26px;
+  }
+}
+
+@include breakpoint-down (768px){
+  .list-view{
+    display: none;
+  }
+}

@@ -1,0 +1,304 @@
+<!doctype html>
+<html class="h-100" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Ecommerce</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100 bg-white">
+
+  <nav class="nav-breadcrumb py-3">
+    <div class="container-lg">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-white px-0">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="./third.html">Carrots from Tomissy Farm</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Checkout page</li>
+        </ol>
+      </nav>
+    </div>
+  </nav>
+
+
+  <main class="main-section">
+    <div class="container-lg">
+      <form method="POST" action="https://echo.htmlacademy.ru">
+        <div class="form-group">
+          <div class="forms-wrapper row ">
+            <div class="forms-wrapper__left col-md-6">
+              <!-- BILLING INFO -->
+              <section class="forms-info mb-5">
+                <!-- BILLING INFO TOP -->
+                <div class="forms-info__top mb-3">
+                  <h2 class="h4">Billing info</h2>
+                  <div class="forms-info__top-inner text-secondary d-flex flex-wrap justify-content-between">
+                    <p class="forms-info__text mr-2">Please enter your billing info</p>
+                    <p class="forms-info__steps">Step 1 of 5</p>
+                  </div>
+                </div>
+                <!-- BILL INFO CENTER -->
+                <div class="forms-info__center">
+                  <!--FIRST NAME AND LAST NAME -->
+                  <div class="row mb-4">
+                    <div class="input-group col-sm-6 mb-2 mb-md-0 font-weight-bolder">
+                      First name
+                      <input class="form-control d-block w-100" name="first-name" placeholder="First name"
+                        aria-label="First name">
+                    </div>
+                    <div class="input-group col-sm-6 font-weight-bolder">
+                      Lat name
+                      <input class="form-control d-block w-100" name="last-name" placeholder="Last name"
+                        aria-label="Lastname">
+                    </div>
+                  </div>
+                  <!--EMAIL ADRESS AND PHONE NUMBER-->
+                  <div class="row mb-4">
+                    <div class="input-group col-sm-6 mb-2 mb-md-0 font-weight-bolder">
+                      Email adress
+                      <input class="form-control d-block w-100" type="email" name="Email addess"
+                        placeholder="Email addess" aria-label="Email addess">
+                    </div>
+                    <div class="input-group col-sm-6 font-weight-bolder">
+                      Phone number
+                      <input class="form-control d-block w-100" type="tel" name="Phone number"
+                        placeholder="Phone number" aria-label="Phone number">
+                    </div>
+                  </div>
+                  <!-- ADRESS AND TOWN-->
+                  <div class="row mb-4">
+                    <div class="input-group col-sm-6 mb-2 mb-md-0 font-weight-bolder">
+                      Address
+                      <input class="form-control d-block w-100" type="text" name="adress" placeholder="Adress"
+                        aria-label="Adress">
+                    </div>
+                    <div class="input-group col-sm-6 font-weight-bolder">
+                      Town / City
+                      <input class="form-control d-block w-100" name="town" placeholder="Town or city"
+                        aria-label="Town or city">
+                    </div>
+                  </div>
+                  <!-- State / Country AND ZIP CODE-->
+                  <div class="row mb-4">
+                    <div class="input-group col-sm-6 mb-2 mb-md-0 font-weight-bolder">
+                      State / Country
+                      <select class="form-select form-control d-block w-100" id="inputGroupSelect01">
+                        <option selected>Choose a state or Country</option>
+                        <option value="1">Uzbekistan</option>
+                        <option value="2">England</option>
+                        <option value="3">USA</option>
+                      </select>
+                    </div>
+                    <div class="input-group col-sm-6 font-weight-bolder">
+                      ZIP/Postal code
+                      <input class="form-control d-block w-100" name="zipcode"
+                        placeholder="Postal code or ZIP" aria-label="Postal code or ZIP">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-group mb-3 col-sm-6">
+                      <div class="input-group-text">
+                        <input class="form-check-input mt-0 " type="checkbox" value=""
+                          aria-label="Checkbox for following text input">
+                      </div>
+                      <input type="text" class="form-control" placeholder="Ship to a different address?"
+                        aria-label="Text input with checkbox">
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="forms-method mb-5">
+                <!-- BILLING METHOD TOP -->
+                <div class="forms-info__top mb-3">
+                  <h2 class="h4">Billing method</h2>
+                  <div class="forms-info__top-inner text-secondary d-flex flex-wrap justify-content-between">
+                    <p class="bill-info__text mr-2">Please enter your payment method</p>
+                    <p class="bill-info__steps">Step 2 of 5</p>
+                  </div>
+                </div>
+
+                <div class="billing-method__box">
+                  <label class="billing-method__label">
+                    <input class="" type="radio" value="1" name="asd">
+                    <span class="d-blcok mr-2 payment-method-fee"><span class="text-success">+32 USD</span> Additional
+                      price</span>
+                    <img src="icon/fedex.png" width="54" height="16" alt="">
+                  </label>
+                </div>
+                <div class="billing-method__box">
+                  <label class="billing-method__label">
+                    <input class="" type="radio" value="1" name="asd">
+                    <span class="d-blcok mr-2 payment-method-fee">
+                      <span class="text-success">+15 USD</span> Additional
+                      price</span>
+                    <img src="icon/dhl.png" width="70" height="16" alt="">
+                  </label>
+                </div>
+
+              </section>
+
+              <section class="payment-method mb-5">
+
+                <!-- Payment method  TOP -->
+                <div class="bill-info__top mb-3">
+                  <h2 class="h4">Payment method</h2>
+                  <div class="bill-info__top-inner text-secondary d-flex flex-wrap justify-content-between">
+                    <p class="bill-info__text mr-2">Please enter your billing info</p>
+                    <p class="bill-info__steps">Step 3 of 5</p>
+                  </div>
+                </div>
+
+                <!-- PAYMENT METHODS -->
+                <div class="order-method__box rounded">
+
+                  <div class="order-method__wrapper payment-method__wrapper--active">
+
+                    <label class="order-method__inner d-flex justify-content-between">
+
+                      <div class="order-method__inner-box d-flex align-items-center">
+                        <input type="radio" name="payment-method" value="1">
+                        <span class="ml-2">Cretid card</span>
+                      </div>
+
+                      <img src="icon/visacard.png" width="94" height="20" alt="">
+                    </label>
+
+
+
+                    <label class="order-method__inner d-flex justify-content-between">
+
+                      <div class="order-method__inner-box d-flex align-items-center">
+                        <input type="radio" name="payment-method" value="2">
+                        <span class="ml-2">Paypal</span>
+                      </div>
+
+                      <img src="icon/paypal.svg" width="94" height="20" alt="">
+                    </label>
+
+                    <label class="order-method__inner d-flex justify-content-between">
+
+                      <div class="order-method__inner-box d-flex align-items-center">
+                        <input type="radio" name="order-method" value="3">
+                        <span class="ml-2">Bitcoin</span>
+                      </div>
+
+                      <img src="icon/bitcoin.svg" width="94" height="20" alt="">
+                    </label>
+
+                  </div>
+
+                </div>
+              </section>
+            </div>
+
+            <div class="summary col-md-6">
+              <div class="border rounded p-3">
+                <h2 class="h3 font-weight-bold">Order Summary</h2>
+                <p class="text-secondary">Price can change depending on shipping method and taxes of your state.</p>
+                <div class="row mb-4">
+                  <div class="col-5 col-sm-3">
+                    <img class="d-block mr-0" src="icon/product-img.png" alt="Photo product" width="100" height="67">
+                    <button class="btn__like btn d-flex align-items-center pl-0 mr-1">Wishlist</button>
+                    <button class="btn__compare btn d-flex align-items-center pl-0">Compare</button>
+                    <button class="btn__remove btn d-flex align-items-center pl-0">Remove</button>
+                  </div>
+                  <div class="col-7 col-sm-9">
+                    <h3 class="h6">Product title</h3>
+                    <dl>
+                      <div class="d-flex">
+                        <dd class="mr-3">Farm:</dd>
+                        <dl class="mb-0">Tharamis Farm</dl>
+                      </div>
+                      <div class="d-flex">
+                        <dd class="mr-3">Freshness:</dd>
+                        <dl class="mb-0">1 day old</dl>
+                      </div>
+                    </dl>
+                    <div class="price-or-select d-flex flex-column align-items-end flex-sm-row">
+                      <div class="price d-flex flex-column">
+                        <span class="h4 font-weight-bold text-success mb-0">36.99 USD</span>
+                        <span class="price__sale text-secondary text-right text-sm-left">48.56 USD</span>
+                      </div>
+                      <div class="selects d-flex border align-items-center px-2 rounded-pill">
+                        <span class="pcs d-inline-block text-secondary">1 pcs | </span>
+                        <form action="https://htmlacademy.ru" method="GET">
+                          <select class="rounded border-0" name="products">
+                            <option value="pcs">Pcs</option>
+                            <option value="test">test</option>
+                            <option value="test1">test1</option>
+                            <option value="test2">test2</option>
+                          </select>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <div class="col-5 col-sm-3">
+                    <img class="d-block mr-0" src="icon/product-img.png" alt="Photo product" width="100" height="67">
+                    <button class="btn__like btn d-flex align-items-center pl-0">Wishlist</button>
+                    <button class="btn__compare btn d-flex align-items-center pl-0">Compare</button>
+                    <button class="btn__remove btn d-flex align-items-center pl-0">Remove</button>
+                  </div>
+                  <div class="col-7 col-sm-9">
+                    <h3 class="h6">Product title</h3>
+                    <dl>
+                      <div class="d-flex">
+                        <dd class="mr-3">Farm:</dd>
+                        <dl class="mb-0">Tharamis Farm</dl>
+                      </div>
+                      <div class="d-flex">
+                        <dd class="mr-3">Freshness:</dd>
+                        <dl class="mb-0">1 day old</dl>
+                      </div>
+                    </dl>
+                    <div class="price-or-select d-flex flex-column align-items-end flex-sm-row">
+                      <div class="price d-flex flex-column">
+                        <span class="h4 font-weight-bold text-success mb-0">36.99 USD</span>
+                        <span class="price__sale text-secondary text-right text-sm-left">48.56 USD</span>
+                      </div>
+                      <div class="selects d-flex border align-items-center px-2 rounded-pill">
+                        <span class="pcs d-inline-block text-secondary">1 pcs | </span>
+                        <form action="https://htmlacademy.ru" method="GET">
+                          <select class="rounded border-0" name="products">
+                            <option value="pcs">Pcs</option>
+                            <option value="test">test</option>
+                            <option value="test1">test1</option>
+                            <option value="test2">test2</option>
+                          </select>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </form>
+    </div>
+
+  </main>
+
+  <footer class="site-footer py-3 mt-auto text-center bg-white">
+    <div class="container">
+      <p class="mb-0 small">Copyright &copy; Abdulloh corp.</p>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
